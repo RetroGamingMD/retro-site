@@ -11,4 +11,8 @@ angular.module('myApp', ['ngRoute'])
     .when('/view2', {
       templateUrl: 'partials/view2.html'
     })
-}]);
+}])
+
+.controller('carouselController', function($scope){
+  $scope.pictures = ["resources/sega.jpg", "resources/Nintendo2.jpg", "resources/2014-10-20-poop.png"]
+})
